@@ -1,0 +1,675 @@
+\hypertarget{header_8h}{}\section{F\+:/\+Proiect/\+Facultate/\+PT -\/ All sorts/header.h File Reference}
+\label{header_8h}\index{F\+:/\+Proiect/\+Facultate/\+P\+T -\/ All sorts/header.\+h@{F\+:/\+Proiect/\+Facultate/\+P\+T -\/ All sorts/header.\+h}}
+
+
+Header file where all head declarations are.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_array}{Array}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{header_8h_a6d672479b393ea1d864de68b12e34582}{random\+\_\+numbers\+\_\+to\+\_\+array} (struct \hyperlink{struct_array}{Array} $\ast$array, int numbers)
+\begin{DoxyCompactList}\small\item\em Generates random numbers and put them into the array. \end{DoxyCompactList}\item 
+void \hyperlink{header_8h_af1643ff3adf10fbc68d1fee33574d300}{add\+\_\+element} (struct \hyperlink{struct_array}{Array} $\ast$array, int element)
+\begin{DoxyCompactList}\small\item\em Add an element to the array end. \end{DoxyCompactList}\item 
+void \hyperlink{header_8h_aa5b980b15da6c760913ed4766084958b}{add\+\_\+element\+\_\+begin} (struct \hyperlink{struct_array}{Array} $\ast$array, int element)
+\begin{DoxyCompactList}\small\item\em Add an element to the beginning of array. \end{DoxyCompactList}\item 
+void \hyperlink{header_8h_a349b1c5a897752382c24d4b2be9eca43}{print\+\_\+array} (struct \hyperlink{struct_array}{Array} $\ast$array)
+\begin{DoxyCompactList}\small\item\em Prints the unmodified array. \end{DoxyCompactList}\item 
+void \hyperlink{header_8h_a4127207c89a809e465a7a27698ba9f74}{quick\+Sort} (int $\ast$arr, int low, int high)
+\item 
+int $\ast$ \hyperlink{header_8h_ae76a2662c50f9802fbda8d58d8a2c477}{copy\+\_\+array} (struct \hyperlink{struct_array}{Array} $\ast$array, int size)
+\begin{DoxyCompactList}\small\item\em Copy the unmodified array into a temporary array in order to make sortings without modified the original array. \end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{header_8h_a5504e15feb2768872b13863ed748db61}{bubble\+\_\+sort} (struct \hyperlink{struct_array}{Array} $\ast$array)
+\begin{DoxyCompactList}\small\item\em Bubble sorts the given array. \end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{header_8h_aff8d351f58c2dc864dcdaf0fec725a21}{insertion\+\_\+sort} (struct \hyperlink{struct_array}{Array} $\ast$array)
+\begin{DoxyCompactList}\small\item\em Insertion sorts the given array. \end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{header_8h_a1cf349e5a4cceefdc76a1ffde009f5c9}{selection\+\_\+sort} (struct \hyperlink{struct_array}{Array} $\ast$array)
+\begin{DoxyCompactList}\small\item\em Selection sorts the given array. \end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{header_8h_acf01bb8d913db5d9c970799c1483a872}{quick\+\_\+sort} (struct \hyperlink{struct_array}{Array} $\ast$array)
+\begin{DoxyCompactList}\small\item\em Quick sorts the given array. \end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{header_8h_a938ed07611650cab89a618517632da46}{merge\+\_\+sort} (struct \hyperlink{struct_array}{Array} $\ast$array)
+\begin{DoxyCompactList}\small\item\em Merge sorts the given array. \end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{header_8h_a7ec858faf6fcac5dcba43b1e66ac0a26}{heap\+\_\+sort} (struct \hyperlink{struct_array}{Array} $\ast$array)
+\begin{DoxyCompactList}\small\item\em Heap sorts the given array. \end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{header_8h_ae58dc1247f7d98674100252a87fc18f2}{radix\+\_\+sort} (struct \hyperlink{struct_array}{Array} $\ast$array)
+\begin{DoxyCompactList}\small\item\em Radix sorts the given array. \end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{header_8h_a970d7b471867bb9a1bd6d4f841ced2c3}{sort\+\_\+with\+\_\+best} (struct \hyperlink{struct_array}{Array} $\ast$array, int size)
+\begin{DoxyCompactList}\small\item\em Used for sorting current array with the best sorting method found so far. \end{DoxyCompactList}\item 
+int \hyperlink{header_8h_ae35b8fa1257a1d5800266358d2cb2d77}{partition} (int $\ast$arr, int low, int high)
+\item 
+int \hyperlink{header_8h_a6ea4f333d5ce7852b1ba236bdad4917d}{get\+Max} (int $\ast$arr, int n)
+\begin{DoxyCompactList}\small\item\em Used to get the largest number in the array. \end{DoxyCompactList}\item 
+int \hyperlink{header_8h_ab39b38af6c309b7869c5acd17ad59bd1}{size\+\_\+of} (struct \hyperlink{struct_array}{Array} $\ast$array)
+\item 
+void \hyperlink{header_8h_ab6b14fea48d9841e29b9fc26be6e05d7}{merge\+Sort} (int $\ast$arr, int l, int r)
+\item 
+void \hyperlink{header_8h_a460c61cd948203b4816bef2accb3fc73}{merge} (int $\ast$arr, int l, int m, int r)
+\item 
+void \hyperlink{header_8h_ada988a2b069a5b5c4038831be4178db3}{heapify} (int $\ast$arr, int n, int i)
+\item 
+void \hyperlink{header_8h_abc4f57d3d4cc808745ccb8e95bd40251}{heap\+Sort} (int $\ast$arr, int n)
+\item 
+void \hyperlink{header_8h_a8219064efdb9c5349ec8f03d4d5c6ed6}{radixsort} (int $\ast$arr, int n)
+\item 
+void \hyperlink{header_8h_ab7925dbc778fdbb11aa70c3de0172016}{count\+Sort} (int $\ast$arr, int n, int exp)
+\item 
+void \hyperlink{header_8h_a767130e4f7a96d90a1a5d811c5cac3f3}{all\+\_\+sort} (struct \hyperlink{struct_array}{Array} $\ast$array)
+\begin{DoxyCompactList}\small\item\em Used for sorting current array with all types of sort. \end{DoxyCompactList}\item 
+void \hyperlink{header_8h_a1ca046a48994bf773487a17302210960}{binary\+\_\+search} (struct \hyperlink{struct_array}{Array} $\ast$array, int number)
+\begin{DoxyCompactList}\small\item\em Sorts the given array with the best method than applys binary search on it. \end{DoxyCompactList}\item 
+void \hyperlink{header_8h_a2d047e8a5489f015f01df4fccdb02ed8}{linear\+\_\+search} (struct \hyperlink{struct_array}{Array} $\ast$array, int number)
+\begin{DoxyCompactList}\small\item\em Linear search for a number into a given array. \end{DoxyCompactList}\item 
+void \hyperlink{header_8h_a17218ee42b027767ea9ba1e799e49610}{begin\+\_\+clock} ()
+\begin{DoxyCompactList}\small\item\em Starts a clock for counting how many seconds did a function take. \end{DoxyCompactList}\item 
+void \hyperlink{header_8h_a2033489d937331f7e7037a459e71f25b}{end\+\_\+clock} (char sorting\+\_\+method\mbox{[}100\mbox{]}, unsigned int sorting\+\_\+number)
+\begin{DoxyCompactList}\small\item\em Ends the started clock. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_array}{Array} \hyperlink{header_8h_a57bb43f4064b035c1eebe6d4a3e57426}{Array}
+\item 
+double \hyperlink{header_8h_a0e6ccfd04189765e417adb366468f39a}{G\+\_\+\+B\+E\+S\+T\+\_\+\+T\+I\+ME}
+\item 
+char \hyperlink{header_8h_acd7153ba503899cec8cdbf515e3eebf0}{G\+\_\+\+B\+E\+S\+T\+\_\+\+M\+E\+T\+H\+OD} \mbox{[}100\mbox{]}
+\item 
+clock\+\_\+t \hyperlink{header_8h_a0001cf52b0ec3463ce5f85066705c778}{begin\+\_\+time}
+\item 
+clock\+\_\+t \hyperlink{header_8h_a934480aa64bad425ee115ea3d26fd0e5}{end\+\_\+time}
+\item 
+int \hyperlink{header_8h_a74b9e6dd78772accc2e076f562f51c6e}{G\+\_\+\+A\+C\+T\+I\+V\+A\+T\+E\+\_\+\+P\+R\+I\+NT}
+\item 
+int \hyperlink{header_8h_a9828cb1d1b16116e71923f26bcc012bb}{G\+\_\+\+B\+E\+S\+T\+\_\+\+N\+U\+M\+B\+ER}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Header file where all head declarations are. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{header_8h_af1643ff3adf10fbc68d1fee33574d300}\label{header_8h_af1643ff3adf10fbc68d1fee33574d300}} 
+\index{header.\+h@{header.\+h}!add\+\_\+element@{add\+\_\+element}}
+\index{add\+\_\+element@{add\+\_\+element}!header.\+h@{header.\+h}}
+\subsubsection{\texorpdfstring{add\+\_\+element()}{add\_element()}}
+{\footnotesize\ttfamily void add\+\_\+element (\begin{DoxyParamCaption}\item[{struct \hyperlink{struct_array}{Array} $\ast$}]{array,  }\item[{int}]{element }\end{DoxyParamCaption})}
+
+
+
+Add an element to the array end. 
+
+Add given element to the end of array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & is the array where the number will be placed. \\
+\hline
+{\em element} & is the number that will be placed. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 33 of file functions.\+c.
+
+\mbox{\Hypertarget{header_8h_aa5b980b15da6c760913ed4766084958b}\label{header_8h_aa5b980b15da6c760913ed4766084958b}} 
+\index{header.\+h@{header.\+h}!add\+\_\+element\+\_\+begin@{add\+\_\+element\+\_\+begin}}
+\index{add\+\_\+element\+\_\+begin@{add\+\_\+element\+\_\+begin}!header.\+h@{header.\+h}}
+\subsubsection{\texorpdfstring{add\+\_\+element\+\_\+begin()}{add\_element\_begin()}}
+{\footnotesize\ttfamily void add\+\_\+element\+\_\+begin (\begin{DoxyParamCaption}\item[{struct \hyperlink{struct_array}{Array} $\ast$}]{array,  }\item[{int}]{element }\end{DoxyParamCaption})}
+
+
+
+Add an element to the beginning of array. 
+
+Add given element to the beginning of array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & is the array where the number will be placed. \\
+\hline
+{\em element} & is the number that will be placed. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 57 of file functions.\+c.
+
+\mbox{\Hypertarget{header_8h_a767130e4f7a96d90a1a5d811c5cac3f3}\label{header_8h_a767130e4f7a96d90a1a5d811c5cac3f3}} 
+\index{header.\+h@{header.\+h}!all\+\_\+sort@{all\+\_\+sort}}
+\index{all\+\_\+sort@{all\+\_\+sort}!header.\+h@{header.\+h}}
+\subsubsection{\texorpdfstring{all\+\_\+sort()}{all\_sort()}}
+{\footnotesize\ttfamily void all\+\_\+sort (\begin{DoxyParamCaption}\item[{struct \hyperlink{struct_array}{Array} $\ast$}]{array }\end{DoxyParamCaption})}
+
+
+
+Used for sorting current array with all types of sort. 
+
+Sorts given array with all sorting methods.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & The array that will be sorted. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 520 of file functions.\+c.
+
+\mbox{\Hypertarget{header_8h_a17218ee42b027767ea9ba1e799e49610}\label{header_8h_a17218ee42b027767ea9ba1e799e49610}} 
+\index{header.\+h@{header.\+h}!begin\+\_\+clock@{begin\+\_\+clock}}
+\index{begin\+\_\+clock@{begin\+\_\+clock}!header.\+h@{header.\+h}}
+\subsubsection{\texorpdfstring{begin\+\_\+clock()}{begin\_clock()}}
+{\footnotesize\ttfamily void begin\+\_\+clock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Starts a clock for counting how many seconds did a function take. 
+
+Starts time counting for determining how long does an opreations take. 
+
+Definition at line 640 of file functions.\+c.
+
+\mbox{\Hypertarget{header_8h_a1ca046a48994bf773487a17302210960}\label{header_8h_a1ca046a48994bf773487a17302210960}} 
+\index{header.\+h@{header.\+h}!binary\+\_\+search@{binary\+\_\+search}}
+\index{binary\+\_\+search@{binary\+\_\+search}!header.\+h@{header.\+h}}
+\subsubsection{\texorpdfstring{binary\+\_\+search()}{binary\_search()}}
+{\footnotesize\ttfamily void binary\+\_\+search (\begin{DoxyParamCaption}\item[{struct \hyperlink{struct_array}{Array} $\ast$}]{array,  }\item[{int}]{number }\end{DoxyParamCaption})}
+
+
+
+Sorts the given array with the best method than applys binary search on it. 
+
+Binary search the given number into the given array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & The array that will be sorted and searched from. \\
+\hline
+{\em number} & Number that will be searched. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 574 of file functions.\+c.
+
+\mbox{\Hypertarget{header_8h_a5504e15feb2768872b13863ed748db61}\label{header_8h_a5504e15feb2768872b13863ed748db61}} 
+\index{header.\+h@{header.\+h}!bubble\+\_\+sort@{bubble\+\_\+sort}}
+\index{bubble\+\_\+sort@{bubble\+\_\+sort}!header.\+h@{header.\+h}}
+\subsubsection{\texorpdfstring{bubble\+\_\+sort()}{bubble\_sort()}}
+{\footnotesize\ttfamily int$\ast$ bubble\+\_\+sort (\begin{DoxyParamCaption}\item[{struct \hyperlink{struct_array}{Array} $\ast$}]{array }\end{DoxyParamCaption})}
+
+
+
+Bubble sorts the given array. 
+
+Bubble sorts the given array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & The array which will be bubble sorted. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 132 of file functions.\+c.
+
+\mbox{\Hypertarget{header_8h_ae76a2662c50f9802fbda8d58d8a2c477}\label{header_8h_ae76a2662c50f9802fbda8d58d8a2c477}} 
+\index{header.\+h@{header.\+h}!copy\+\_\+array@{copy\+\_\+array}}
+\index{copy\+\_\+array@{copy\+\_\+array}!header.\+h@{header.\+h}}
+\subsubsection{\texorpdfstring{copy\+\_\+array()}{copy\_array()}}
+{\footnotesize\ttfamily int$\ast$ copy\+\_\+array (\begin{DoxyParamCaption}\item[{struct \hyperlink{struct_array}{Array} $\ast$}]{array,  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+Copy the unmodified array into a temporary array in order to make sortings without modified the original array. 
+
+Copy the array into a pointer so we can do operations without altering the original one.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & That will be copied. \\
+\hline
+{\em size} & Size of unmodified array. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 112 of file functions.\+c.
+
+\mbox{\Hypertarget{header_8h_ab7925dbc778fdbb11aa70c3de0172016}\label{header_8h_ab7925dbc778fdbb11aa70c3de0172016}} 
+\index{header.\+h@{header.\+h}!count\+Sort@{count\+Sort}}
+\index{count\+Sort@{count\+Sort}!header.\+h@{header.\+h}}
+\subsubsection{\texorpdfstring{count\+Sort()}{countSort()}}
+{\footnotesize\ttfamily void count\+Sort (\begin{DoxyParamCaption}\item[{int $\ast$}]{arr,  }\item[{int}]{n,  }\item[{int}]{exp }\end{DoxyParamCaption})}
+
+Used for counting the output array for radix sort. 
+
+Definition at line 481 of file functions.\+c.
+
+\mbox{\Hypertarget{header_8h_a2033489d937331f7e7037a459e71f25b}\label{header_8h_a2033489d937331f7e7037a459e71f25b}} 
+\index{header.\+h@{header.\+h}!end\+\_\+clock@{end\+\_\+clock}}
+\index{end\+\_\+clock@{end\+\_\+clock}!header.\+h@{header.\+h}}
+\subsubsection{\texorpdfstring{end\+\_\+clock()}{end\_clock()}}
+{\footnotesize\ttfamily void end\+\_\+clock (\begin{DoxyParamCaption}\item[{char}]{sorting\+\_\+method\mbox{[}100\mbox{]},  }\item[{unsigned int}]{sorting\+\_\+number }\end{DoxyParamCaption})}
+
+
+
+Ends the started clock. 
+
+Ends time counting, and prints the result.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sorting\+\_\+method} & used for knowing which is the name of the best sorting method. \\
+\hline
+{\em sorting\+\_\+number} & each sorting has a specified number, used function sort\+\_\+with\+\_\+best \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 652 of file functions.\+c.
+
+\mbox{\Hypertarget{header_8h_a6ea4f333d5ce7852b1ba236bdad4917d}\label{header_8h_a6ea4f333d5ce7852b1ba236bdad4917d}} 
+\index{header.\+h@{header.\+h}!get\+Max@{get\+Max}}
+\index{get\+Max@{get\+Max}!header.\+h@{header.\+h}}
+\subsubsection{\texorpdfstring{get\+Max()}{getMax()}}
+{\footnotesize\ttfamily int get\+Max (\begin{DoxyParamCaption}\item[{int $\ast$}]{arr,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Used to get the largest number in the array. 
+
+Get\textquotesingle{}s the maximum element from an array. Used for radix sort.
+
+
+\begin{DoxyParams}{Parameters}
+{\em arr} & The array from where the largest number will be extracted. \\
+\hline
+{\em n} & Size of the array. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 506 of file functions.\+c.
+
+\mbox{\Hypertarget{header_8h_a7ec858faf6fcac5dcba43b1e66ac0a26}\label{header_8h_a7ec858faf6fcac5dcba43b1e66ac0a26}} 
+\index{header.\+h@{header.\+h}!heap\+\_\+sort@{heap\+\_\+sort}}
+\index{heap\+\_\+sort@{heap\+\_\+sort}!header.\+h@{header.\+h}}
+\subsubsection{\texorpdfstring{heap\+\_\+sort()}{heap\_sort()}}
+{\footnotesize\ttfamily int$\ast$ heap\+\_\+sort (\begin{DoxyParamCaption}\item[{struct \hyperlink{struct_array}{Array} $\ast$}]{array }\end{DoxyParamCaption})}
+
+
+
+Heap sorts the given array. 
+
+Heap sorts the given array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & The array which will be heap sorted. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 380 of file functions.\+c.
+
+\mbox{\Hypertarget{header_8h_ada988a2b069a5b5c4038831be4178db3}\label{header_8h_ada988a2b069a5b5c4038831be4178db3}} 
+\index{header.\+h@{header.\+h}!heapify@{heapify}}
+\index{heapify@{heapify}!header.\+h@{header.\+h}}
+\subsubsection{\texorpdfstring{heapify()}{heapify()}}
+{\footnotesize\ttfamily void heapify (\begin{DoxyParamCaption}\item[{int $\ast$}]{arr,  }\item[{int}]{n,  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+Heapify the given array. 
+
+Definition at line 405 of file functions.\+c.
+
+\mbox{\Hypertarget{header_8h_abc4f57d3d4cc808745ccb8e95bd40251}\label{header_8h_abc4f57d3d4cc808745ccb8e95bd40251}} 
+\index{header.\+h@{header.\+h}!heap\+Sort@{heap\+Sort}}
+\index{heap\+Sort@{heap\+Sort}!header.\+h@{header.\+h}}
+\subsubsection{\texorpdfstring{heap\+Sort()}{heapSort()}}
+{\footnotesize\ttfamily void heap\+Sort (\begin{DoxyParamCaption}\item[{int $\ast$}]{arr,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+Calls heapify function for heap sort. 
+
+Definition at line 426 of file functions.\+c.
+
+\mbox{\Hypertarget{header_8h_aff8d351f58c2dc864dcdaf0fec725a21}\label{header_8h_aff8d351f58c2dc864dcdaf0fec725a21}} 
+\index{header.\+h@{header.\+h}!insertion\+\_\+sort@{insertion\+\_\+sort}}
+\index{insertion\+\_\+sort@{insertion\+\_\+sort}!header.\+h@{header.\+h}}
+\subsubsection{\texorpdfstring{insertion\+\_\+sort()}{insertion\_sort()}}
+{\footnotesize\ttfamily int$\ast$ insertion\+\_\+sort (\begin{DoxyParamCaption}\item[{struct \hyperlink{struct_array}{Array} $\ast$}]{array }\end{DoxyParamCaption})}
+
+
+
+Insertion sorts the given array. 
+
+Insertion sorts the given array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & The array which will be insertion sorted. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 166 of file functions.\+c.
+
+\mbox{\Hypertarget{header_8h_a2d047e8a5489f015f01df4fccdb02ed8}\label{header_8h_a2d047e8a5489f015f01df4fccdb02ed8}} 
+\index{header.\+h@{header.\+h}!linear\+\_\+search@{linear\+\_\+search}}
+\index{linear\+\_\+search@{linear\+\_\+search}!header.\+h@{header.\+h}}
+\subsubsection{\texorpdfstring{linear\+\_\+search()}{linear\_search()}}
+{\footnotesize\ttfamily void linear\+\_\+search (\begin{DoxyParamCaption}\item[{struct \hyperlink{struct_array}{Array} $\ast$}]{array,  }\item[{int}]{number }\end{DoxyParamCaption})}
+
+
+
+Linear search for a number into a given array. 
+
+Linear search the given number into the given array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & The array that will be sorted and searched from. \\
+\hline
+{\em number} & Number that will be searched. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 614 of file functions.\+c.
+
+\mbox{\Hypertarget{header_8h_a460c61cd948203b4816bef2accb3fc73}\label{header_8h_a460c61cd948203b4816bef2accb3fc73}} 
+\index{header.\+h@{header.\+h}!merge@{merge}}
+\index{merge@{merge}!header.\+h@{header.\+h}}
+\subsubsection{\texorpdfstring{merge()}{merge()}}
+{\footnotesize\ttfamily void merge (\begin{DoxyParamCaption}\item[{int $\ast$}]{arr,  }\item[{int}]{l,  }\item[{int}]{m,  }\item[{int}]{r }\end{DoxyParamCaption})}
+
+Merge two arrays. From 0 to m -\/ 1 and from r -\/m to r. Used for merge sorting. 
+
+Definition at line 323 of file functions.\+c.
+
+\mbox{\Hypertarget{header_8h_a938ed07611650cab89a618517632da46}\label{header_8h_a938ed07611650cab89a618517632da46}} 
+\index{header.\+h@{header.\+h}!merge\+\_\+sort@{merge\+\_\+sort}}
+\index{merge\+\_\+sort@{merge\+\_\+sort}!header.\+h@{header.\+h}}
+\subsubsection{\texorpdfstring{merge\+\_\+sort()}{merge\_sort()}}
+{\footnotesize\ttfamily int$\ast$ merge\+\_\+sort (\begin{DoxyParamCaption}\item[{struct \hyperlink{struct_array}{Array} $\ast$}]{array }\end{DoxyParamCaption})}
+
+
+
+Merge sorts the given array. 
+
+Merge sorts the given array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & The array which will be merge sorted. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 298 of file functions.\+c.
+
+\mbox{\Hypertarget{header_8h_ab6b14fea48d9841e29b9fc26be6e05d7}\label{header_8h_ab6b14fea48d9841e29b9fc26be6e05d7}} 
+\index{header.\+h@{header.\+h}!merge\+Sort@{merge\+Sort}}
+\index{merge\+Sort@{merge\+Sort}!header.\+h@{header.\+h}}
+\subsubsection{\texorpdfstring{merge\+Sort()}{mergeSort()}}
+{\footnotesize\ttfamily void merge\+Sort (\begin{DoxyParamCaption}\item[{int $\ast$}]{arr,  }\item[{int}]{l,  }\item[{int}]{r }\end{DoxyParamCaption})}
+
+Calls the functions for merge sorting. 
+
+Definition at line 364 of file functions.\+c.
+
+\mbox{\Hypertarget{header_8h_ae35b8fa1257a1d5800266358d2cb2d77}\label{header_8h_ae35b8fa1257a1d5800266358d2cb2d77}} 
+\index{header.\+h@{header.\+h}!partition@{partition}}
+\index{partition@{partition}!header.\+h@{header.\+h}}
+\subsubsection{\texorpdfstring{partition()}{partition()}}
+{\footnotesize\ttfamily int partition (\begin{DoxyParamCaption}\item[{int $\ast$}]{arr,  }\item[{int}]{low,  }\item[{int}]{high }\end{DoxyParamCaption})}
+
+Partition used for quick sort. It\textquotesingle{}s swaping the pivot with the lowest. 
+
+Definition at line 273 of file functions.\+c.
+
+\mbox{\Hypertarget{header_8h_a349b1c5a897752382c24d4b2be9eca43}\label{header_8h_a349b1c5a897752382c24d4b2be9eca43}} 
+\index{header.\+h@{header.\+h}!print\+\_\+array@{print\+\_\+array}}
+\index{print\+\_\+array@{print\+\_\+array}!header.\+h@{header.\+h}}
+\subsubsection{\texorpdfstring{print\+\_\+array()}{print\_array()}}
+{\footnotesize\ttfamily void print\+\_\+array (\begin{DoxyParamCaption}\item[{struct \hyperlink{struct_array}{Array} $\ast$}]{array }\end{DoxyParamCaption})}
+
+
+
+Prints the unmodified array. 
+
+Prints the unmodified array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & is the original array without any sorting.\\
+\hline
+{\em array} & which size will be returned. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Size of array 
+\end{DoxyReturn}
+
+
+Definition at line 75 of file functions.\+c.
+
+\mbox{\Hypertarget{header_8h_acf01bb8d913db5d9c970799c1483a872}\label{header_8h_acf01bb8d913db5d9c970799c1483a872}} 
+\index{header.\+h@{header.\+h}!quick\+\_\+sort@{quick\+\_\+sort}}
+\index{quick\+\_\+sort@{quick\+\_\+sort}!header.\+h@{header.\+h}}
+\subsubsection{\texorpdfstring{quick\+\_\+sort()}{quick\_sort()}}
+{\footnotesize\ttfamily int$\ast$ quick\+\_\+sort (\begin{DoxyParamCaption}\item[{struct \hyperlink{struct_array}{Array} $\ast$}]{array }\end{DoxyParamCaption})}
+
+
+
+Quick sorts the given array. 
+
+Quick sorts the given array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & The array which will be quick sorted. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 238 of file functions.\+c.
+
+\mbox{\Hypertarget{header_8h_a4127207c89a809e465a7a27698ba9f74}\label{header_8h_a4127207c89a809e465a7a27698ba9f74}} 
+\index{header.\+h@{header.\+h}!quick\+Sort@{quick\+Sort}}
+\index{quick\+Sort@{quick\+Sort}!header.\+h@{header.\+h}}
+\subsubsection{\texorpdfstring{quick\+Sort()}{quickSort()}}
+{\footnotesize\ttfamily void quick\+Sort (\begin{DoxyParamCaption}\item[{int $\ast$}]{arr,  }\item[{int}]{low,  }\item[{int}]{high }\end{DoxyParamCaption})}
+
+Used for quick sorting. Ends when low is greather than high. 
+
+Definition at line 264 of file functions.\+c.
+
+\mbox{\Hypertarget{header_8h_ae58dc1247f7d98674100252a87fc18f2}\label{header_8h_ae58dc1247f7d98674100252a87fc18f2}} 
+\index{header.\+h@{header.\+h}!radix\+\_\+sort@{radix\+\_\+sort}}
+\index{radix\+\_\+sort@{radix\+\_\+sort}!header.\+h@{header.\+h}}
+\subsubsection{\texorpdfstring{radix\+\_\+sort()}{radix\_sort()}}
+{\footnotesize\ttfamily int$\ast$ radix\+\_\+sort (\begin{DoxyParamCaption}\item[{struct \hyperlink{struct_array}{Array} $\ast$}]{array }\end{DoxyParamCaption})}
+
+
+
+Radix sorts the given array. 
+
+Radix sorts the given array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & The array which will be heap radix. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 448 of file functions.\+c.
+
+\mbox{\Hypertarget{header_8h_a8219064efdb9c5349ec8f03d4d5c6ed6}\label{header_8h_a8219064efdb9c5349ec8f03d4d5c6ed6}} 
+\index{header.\+h@{header.\+h}!radixsort@{radixsort}}
+\index{radixsort@{radixsort}!header.\+h@{header.\+h}}
+\subsubsection{\texorpdfstring{radixsort()}{radixsort()}}
+{\footnotesize\ttfamily void radixsort (\begin{DoxyParamCaption}\item[{int $\ast$}]{arr,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+Calls the count\+Sort and get\+Max functions for radix sort. 
+
+Definition at line 472 of file functions.\+c.
+
+\mbox{\Hypertarget{header_8h_a6d672479b393ea1d864de68b12e34582}\label{header_8h_a6d672479b393ea1d864de68b12e34582}} 
+\index{header.\+h@{header.\+h}!random\+\_\+numbers\+\_\+to\+\_\+array@{random\+\_\+numbers\+\_\+to\+\_\+array}}
+\index{random\+\_\+numbers\+\_\+to\+\_\+array@{random\+\_\+numbers\+\_\+to\+\_\+array}!header.\+h@{header.\+h}}
+\subsubsection{\texorpdfstring{random\+\_\+numbers\+\_\+to\+\_\+array()}{random\_numbers\_to\_array()}}
+{\footnotesize\ttfamily void random\+\_\+numbers\+\_\+to\+\_\+array (\begin{DoxyParamCaption}\item[{struct \hyperlink{struct_array}{Array} $\ast$}]{array,  }\item[{int}]{numbers }\end{DoxyParamCaption})}
+
+
+
+Generates random numbers and put them into the array. 
+
+Used to generate numbers and push them into the list.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & is the array where the numbers will e generated. \\
+\hline
+{\em numbers} & determins how many numbers will be generated. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 19 of file functions.\+c.
+
+\mbox{\Hypertarget{header_8h_a1cf349e5a4cceefdc76a1ffde009f5c9}\label{header_8h_a1cf349e5a4cceefdc76a1ffde009f5c9}} 
+\index{header.\+h@{header.\+h}!selection\+\_\+sort@{selection\+\_\+sort}}
+\index{selection\+\_\+sort@{selection\+\_\+sort}!header.\+h@{header.\+h}}
+\subsubsection{\texorpdfstring{selection\+\_\+sort()}{selection\_sort()}}
+{\footnotesize\ttfamily int$\ast$ selection\+\_\+sort (\begin{DoxyParamCaption}\item[{struct \hyperlink{struct_array}{Array} $\ast$}]{array }\end{DoxyParamCaption})}
+
+
+
+Selection sorts the given array. 
+
+Selection sorts the given array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & The array which will be selection sorted. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 202 of file functions.\+c.
+
+\mbox{\Hypertarget{header_8h_ab39b38af6c309b7869c5acd17ad59bd1}\label{header_8h_ab39b38af6c309b7869c5acd17ad59bd1}} 
+\index{header.\+h@{header.\+h}!size\+\_\+of@{size\+\_\+of}}
+\index{size\+\_\+of@{size\+\_\+of}!header.\+h@{header.\+h}}
+\subsubsection{\texorpdfstring{size\+\_\+of()}{size\_of()}}
+{\footnotesize\ttfamily int size\+\_\+of (\begin{DoxyParamCaption}\item[{struct \hyperlink{struct_array}{Array} $\ast$}]{array }\end{DoxyParamCaption})}
+
+Returns the size of the given array. 
+
+Definition at line 92 of file functions.\+c.
+
+\mbox{\Hypertarget{header_8h_a970d7b471867bb9a1bd6d4f841ced2c3}\label{header_8h_a970d7b471867bb9a1bd6d4f841ced2c3}} 
+\index{header.\+h@{header.\+h}!sort\+\_\+with\+\_\+best@{sort\+\_\+with\+\_\+best}}
+\index{sort\+\_\+with\+\_\+best@{sort\+\_\+with\+\_\+best}!header.\+h@{header.\+h}}
+\subsubsection{\texorpdfstring{sort\+\_\+with\+\_\+best()}{sort\_with\_best()}}
+{\footnotesize\ttfamily int$\ast$ sort\+\_\+with\+\_\+best (\begin{DoxyParamCaption}\item[{struct \hyperlink{struct_array}{Array} $\ast$}]{array,  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+Used for sorting current array with the best sorting method found so far. 
+
+Sorts the given array with the best method found so far and it returns the sorted array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & The array that will be sorted. \\
+\hline
+{\em size} & Size of the array. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 545 of file functions.\+c.
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{header_8h_a57bb43f4064b035c1eebe6d4a3e57426}\label{header_8h_a57bb43f4064b035c1eebe6d4a3e57426}} 
+\index{header.\+h@{header.\+h}!Array@{Array}}
+\index{Array@{Array}!header.\+h@{header.\+h}}
+\subsubsection{\texorpdfstring{Array}{Array}}
+{\footnotesize\ttfamily struct \hyperlink{struct_array}{Array} \hyperlink{struct_array}{Array}}
+
+Our main array. \mbox{\Hypertarget{header_8h_a0001cf52b0ec3463ce5f85066705c778}\label{header_8h_a0001cf52b0ec3463ce5f85066705c778}} 
+\index{header.\+h@{header.\+h}!begin\+\_\+time@{begin\+\_\+time}}
+\index{begin\+\_\+time@{begin\+\_\+time}!header.\+h@{header.\+h}}
+\subsubsection{\texorpdfstring{begin\+\_\+time}{begin\_time}}
+{\footnotesize\ttfamily clock\+\_\+t begin\+\_\+time}
+
+Used to determine the time took for each sorting. 
+
+Definition at line 25 of file header.\+h.
+
+\mbox{\Hypertarget{header_8h_a934480aa64bad425ee115ea3d26fd0e5}\label{header_8h_a934480aa64bad425ee115ea3d26fd0e5}} 
+\index{header.\+h@{header.\+h}!end\+\_\+time@{end\+\_\+time}}
+\index{end\+\_\+time@{end\+\_\+time}!header.\+h@{header.\+h}}
+\subsubsection{\texorpdfstring{end\+\_\+time}{end\_time}}
+{\footnotesize\ttfamily clock\+\_\+t end\+\_\+time}
+
+Used to determine the time took for each sorting. 
+
+Definition at line 26 of file header.\+h.
+
+\mbox{\Hypertarget{header_8h_a74b9e6dd78772accc2e076f562f51c6e}\label{header_8h_a74b9e6dd78772accc2e076f562f51c6e}} 
+\index{header.\+h@{header.\+h}!G\+\_\+\+A\+C\+T\+I\+V\+A\+T\+E\+\_\+\+P\+R\+I\+NT@{G\+\_\+\+A\+C\+T\+I\+V\+A\+T\+E\+\_\+\+P\+R\+I\+NT}}
+\index{G\+\_\+\+A\+C\+T\+I\+V\+A\+T\+E\+\_\+\+P\+R\+I\+NT@{G\+\_\+\+A\+C\+T\+I\+V\+A\+T\+E\+\_\+\+P\+R\+I\+NT}!header.\+h@{header.\+h}}
+\subsubsection{\texorpdfstring{G\+\_\+\+A\+C\+T\+I\+V\+A\+T\+E\+\_\+\+P\+R\+I\+NT}{G\_ACTIVATE\_PRINT}}
+{\footnotesize\ttfamily int G\+\_\+\+A\+C\+T\+I\+V\+A\+T\+E\+\_\+\+P\+R\+I\+NT}
+
+Determines if after each sorting the output should be printed to console. 
+
+Definition at line 10 of file functions.\+c.
+
+\mbox{\Hypertarget{header_8h_acd7153ba503899cec8cdbf515e3eebf0}\label{header_8h_acd7153ba503899cec8cdbf515e3eebf0}} 
+\index{header.\+h@{header.\+h}!G\+\_\+\+B\+E\+S\+T\+\_\+\+M\+E\+T\+H\+OD@{G\+\_\+\+B\+E\+S\+T\+\_\+\+M\+E\+T\+H\+OD}}
+\index{G\+\_\+\+B\+E\+S\+T\+\_\+\+M\+E\+T\+H\+OD@{G\+\_\+\+B\+E\+S\+T\+\_\+\+M\+E\+T\+H\+OD}!header.\+h@{header.\+h}}
+\subsubsection{\texorpdfstring{G\+\_\+\+B\+E\+S\+T\+\_\+\+M\+E\+T\+H\+OD}{G\_BEST\_METHOD}}
+{\footnotesize\ttfamily char G\+\_\+\+B\+E\+S\+T\+\_\+\+M\+E\+T\+H\+OD\mbox{[}100\mbox{]}}
+
+String where is saved the name of the best sorting method. 
+
+Definition at line 7 of file functions.\+c.
+
+\mbox{\Hypertarget{header_8h_a9828cb1d1b16116e71923f26bcc012bb}\label{header_8h_a9828cb1d1b16116e71923f26bcc012bb}} 
+\index{header.\+h@{header.\+h}!G\+\_\+\+B\+E\+S\+T\+\_\+\+N\+U\+M\+B\+ER@{G\+\_\+\+B\+E\+S\+T\+\_\+\+N\+U\+M\+B\+ER}}
+\index{G\+\_\+\+B\+E\+S\+T\+\_\+\+N\+U\+M\+B\+ER@{G\+\_\+\+B\+E\+S\+T\+\_\+\+N\+U\+M\+B\+ER}!header.\+h@{header.\+h}}
+\subsubsection{\texorpdfstring{G\+\_\+\+B\+E\+S\+T\+\_\+\+N\+U\+M\+B\+ER}{G\_BEST\_NUMBER}}
+{\footnotesize\ttfamily int G\+\_\+\+B\+E\+S\+T\+\_\+\+N\+U\+M\+B\+ER}
+
+Eaching sorting has a number, it\textquotesingle{}s used for determining the best sort for an binary search. 
+
+Definition at line 11 of file functions.\+c.
+
+\mbox{\Hypertarget{header_8h_a0e6ccfd04189765e417adb366468f39a}\label{header_8h_a0e6ccfd04189765e417adb366468f39a}} 
+\index{header.\+h@{header.\+h}!G\+\_\+\+B\+E\+S\+T\+\_\+\+T\+I\+ME@{G\+\_\+\+B\+E\+S\+T\+\_\+\+T\+I\+ME}}
+\index{G\+\_\+\+B\+E\+S\+T\+\_\+\+T\+I\+ME@{G\+\_\+\+B\+E\+S\+T\+\_\+\+T\+I\+ME}!header.\+h@{header.\+h}}
+\subsubsection{\texorpdfstring{G\+\_\+\+B\+E\+S\+T\+\_\+\+T\+I\+ME}{G\_BEST\_TIME}}
+{\footnotesize\ttfamily double G\+\_\+\+B\+E\+S\+T\+\_\+\+T\+I\+ME}
+
+Value used to determine which sorting has the best time. 
+
+Definition at line 6 of file functions.\+c.
+
